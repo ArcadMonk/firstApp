@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyFirstAndroidApp</string>
+    <string name="text">Hello : </string>
+    <string name="logoesiee_description">logoESIEE</string>
+    <string name="button">Edit text !</string>
+    <string name="edited_text">edit this !</string>
+</resources>
