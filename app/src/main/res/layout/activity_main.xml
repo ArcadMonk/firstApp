@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
 
-    android:layout_margin="20dp"
+    android:layout_margin="5dp"
 
     tools:context=".MainActivity"
     tools:ignore="ExtraText">
@@ -50,14 +50,9 @@
         android:src="@drawable/logoesiee"
 
         app:layout_constraintStart_toEndOf="@+id/my_item_id"
-
-
-        app:layout_constraintEnd_toStartOf="@+id/button_id"
-
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/namesList_id"
-
         app:layout_constraintHorizontal_bias="0.5"
-
 
         />
 
@@ -68,49 +63,26 @@
         android:layout_height="wrap_content"
         android:text="@string/button"
 
-        app:layout_constraintStart_toEndOf="@+id/image_esiee"
 
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
 
-
-        app:layout_constraintTop_toTopOf="@id/image_esiee"
-
-        app:layout_constraintBottom_toBottomOf="@id/image_esiee"
-        />
-
-    <TextView
-        android:id="@+id/edited_text_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-
-        android:text="@string/edited_text"
-
-
-
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/image_esiee"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
 
         />
 
+
     <TextView
-        android:id="@+id/test_id"
+        android:id="@+id/name_selected_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="this is a test text"
 
         app:layout_constraintHorizontal_bias="0.5"
-
-
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-
-        app:layout_constraintTop_toBottomOf="@id/edited_text_id"
-
-
+        app:layout_constraintTop_toBottomOf="@id/image_esiee"
 
         />
 

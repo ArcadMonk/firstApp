@@ -14,10 +14,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        button_id.setOnClickListener { edited_text_id.text = edited_text_id.text.toString() + "E"}
         val names = listOf("Antoine", "Baptiste ", "Emilie", "Jerome", "Gus")
         names.sortedBy { it.length }
         Log.d( TAG , names.toString())
         namesList_id.text = names.toString()
+        button_id.setOnClickListener { my_item_id.text = "Hello : " + names.get((0..names.size-1).random()) + " welcome to " }
+
     }
 }
